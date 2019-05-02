@@ -1,0 +1,13 @@
+.FilmsTable__Table {
+  background: #575405;
+}
+.FilmsHeader__label {
+  background: #3e3702;
+  color: #ece50b;
+  text-align: left;
+  min-width: 20vw;
+}
+.FilmsRow__item {
+  background: #8b8615;
+  text-align: center;
+}

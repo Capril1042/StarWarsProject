@@ -26,20 +26,20 @@ class FilmsTable extends Component {
     console.log(this.state.filmData);
     return (
       <div className="FilmsTable">
-        <table>
-          <thead>
+        <table className="FilmsTable__Table">
+          <thead className="FilmsTable__Header">
             <tr>
-              <th>Title</th>
-              <th>Episode</th>
-              <th>Release Date</th>
+              <th className="FilmsHeader__label">Title</th>
+              <th className="FilmsHeader__label">Episode</th>
+              <th className="FilmsHeader__label">Release Date</th>
             </tr>
           </thead>
-          <tbody>
+          <tbody className="FilmsRow">
             {this.state.filmData.map((data, index) => (
               <tr key={index} film={data}>
-                <td>{data.title}</td>
-                <td>{data.episode_id}</td>
-                <td>{data.release_date}</td>
+                <td className="FilmsRow__item">{data.title}</td>
+                <td className="FilmsRow__item">{data.episode_id}</td>
+                <td className="FilmsRow__item">{data.release_date}</td>
               </tr>
             ))}
           </tbody>
